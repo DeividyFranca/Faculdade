@@ -54,11 +54,11 @@ public class ComissaoFuncionario extends Object {
     }
 
     public double ganhos() {
-        return Taxacomissao * Vendasbrutas;
+        return getTaxacomissao() * getVendasbrutas();
     }
 
     @Override
     public String toString() {
-        return String.format("%s: %s %s\n%s: %s\n%s: %.2f\n%s: %.2f", "Comissão do Funcionário", Nome, Sobrenome, "Número de Segurança Social", NumeroSegurancasocial, "Vendas Brutas", Vendasbrutas, "Taxa de Comissão", Taxacomissao);
+        return String.format("%s: %s %s\n%s: %s\n%s: %.2f\n%s: %.2f", "Comissão do Funcionário", getNome(), getSobrenome(), "Número de Segurança Social", getNumeroSegurancasocial(), "Vendas Brutas", getVendasbrutas(), "Taxa de Comissão", getTaxacomissao());
     }
 }
